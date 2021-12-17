@@ -1,4 +1,10 @@
 def is_palindrome(phrase):
+    new_phrase = phrase.lower().replace(' ', '')
+    if new_phrase == new_phrase[::-1]:
+        return True
+    else:
+        return False
+
     """Is phrase a palindrome?
 
     Return True/False if phrase is a palindrome (same read backwards and
